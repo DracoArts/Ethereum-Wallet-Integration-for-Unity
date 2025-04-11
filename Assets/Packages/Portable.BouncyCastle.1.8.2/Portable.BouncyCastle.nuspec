@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Portable.BouncyCastle</id>
+    <version>1.8.2</version>
+    <title>Bouncy Castle Portable</title>
+    <authors>Oren Novotny</authors>
+    <owners>Oren Novotny</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://www.bouncycastle.org/csharp/licence.html</licenseUrl>
+    <projectUrl>https://www.bouncycastle.org/csharp/</projectUrl>
+    <iconUrl>https://www.bouncycastle.org/images/csharp_logo.gif</iconUrl>
+    <description>BouncyCastle portable version with support for .NET 4, .NET Standard 1.0-2.0, WP, Silverlight, MonoAndroid, Xamarin.iOS, .NET Core</description>
+    <releaseNotes>https://www.bouncycastle.org/csharp/#RELEASENOTES182</releaseNotes>
+    <copyright>© 2000-2018 Legion of the Bouncy Castle Inc.</copyright>
+    <tags>bouncycastle cryptography encryption security</tags>
+    <repository type="git" url="https://github.com/onovotny/bc-csharp" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.0" />
+      <group targetFramework=".NETPortable0.0-Profile328" />
+      <group targetFramework=".NETStandard1.0">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>
